@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcular media ceep jf</title>
+    <style>
+       body{
+        background-color: rgb(103, 156, 255);
+        font: normal 20pt Arial
+       }
+    </style>
+</head>
+<body>
+    <script>
+        var m1 = Number.parseFloat(window.prompt(`qual foi sua media no 1° bimestre?`))
+        var m2 = Number.parseFloat(window.prompt(`qual foi sua media no 2° bimestre?`))
+        var m3 = Number.parseFloat(window.prompt(`qual foi sua media no 3° bimestre?`))
+        var m4 = Number.parseFloat(window.prompt(`qual foi sua media no 4° bimestre?`))
+        
+         if (m3 == 0){    
+            var na3 = Number.parseFloat(window.prompt(`quanto você tirou em atividade no 3° bimestre?`))
+            var np3 = Number.parseFloat(window.prompt(`quanto você tirou na prova do 3° bimestre?`))
+            var ne3 = Number.parseFloat(window.prompt(`quanto você tirou em eletiva no 3° bimestre?`))
+
+            m3 = (na3 + np3 + ne3) / 3
+         } 
+        
+         if (m4 == 0){
+            var na4 = Number.parseFloat(window.prompt(`quanto você tirou em atividade no 4° bimestre?`))
+            var np4 = Number.parseFloat(window.prompt(`quanto você tirou na prova do 4° bimestre?`))
+            var ne4 = Number.parseFloat(window.prompt(`quanto você tirou em eletiva no 4° bimestre?`))
+            var ns =  Number.parseFloat(window.prompt(`quanto você tirou no simulado do 4° bimestre?`))
+
+            m4 = (na4 + np4 + ne4 + ns) / 4
+         }
+
+        var ma = (m1 + m2 + m3 + m4) / 4
+        ma.toFixed(2)
+        
+        if (ma >= 6){
+            document.write(`Parabéns! você passou com ${ma}`)
+        } 
+            else{
+                var rec =  15 - ma * 2
+                rec.toFixed(2)
+                document.write(`infelizmente você não passou, você precisa tirar ${rec} na recuperação`)
+            }
+    
+    </script>
+</body>
+</html>
