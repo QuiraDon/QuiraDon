@@ -1,4 +1,4 @@
-# 💫 About Me:
+# 💫 Algumas Informações sobre mim:
 🔭 I’m currently working on [Arkanus.app](https://rpg.arkanus.app)<br>🌱 I’m currently learning a Books<br>💬 Ask me about Games and Pizza<br>
 
 
